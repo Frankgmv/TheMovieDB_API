@@ -1,0 +1,120 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");
+
+
+body {
+    background-image: url("../cine.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    padding-bottom: 2pc;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.paginacion {
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paginacion span {
+    font-size: 1.4em;
+    font-weight: 900;
+    color: white;
+}
+
+.paginacion button {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: 3px solid orange;
+    border-radius: 14px;
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+.card-movie:hover {
+    scale: .99;
+    box-shadow: 3px 3px 10px 2px white;
+    transition: all .2s;
+    transform: rotate(.4deg);
+}
+
+.card-movie:hover I {
+    transform: rotate(120deg);
+}
+
+
+.card-movie {
+    border: 2px solid orange;
+    flex-basis: 250px;
+    background-color: #000f;
+    flex-grow: 1; 
+    flex-shrink: 1;
+    border-radius: 10px;
+}
+
+
+.movie-img img {
+    width: 100%;
+    object-fit: contain;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.movie-container-info {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    padding: 10px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.movie-title,
+.movie-popularity,
+.movie-release_date {
+    color: lightblue;
+}
+
+.movie-title {
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.movie-release_date {
+    font-weight: 400;
+}
+
+.movie-popularity {
+    margin-right: 20px;
+}
+
+.movie-popularity i {
+    font-size: 1.8em;
+    position: relative;
+    bottom: -9px;
+    left: 3px;
+    color: red;
+}
